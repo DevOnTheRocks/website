@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,700');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif !important;
+    color: inherit;
+    background-color: #f1f1f1;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, div {
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+#navbar {
+    margin-top: 20px;
+}
+#navbar,
+.navbar-brand {
+    padding: 0px 15px !important;
+}
+.nav>li>a {
+    padding: 10px 10px !important;
+}
+.navbar-default {
+    background-color: #5bc0de;
+    background-image: none;
+    padding: 10px;
+    border: none;
+    box-shadow: none;
+}
+.navbar-default .navbar-brand {
+    color: #FFEFDE;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+} .navbar-default .navbar-brand:hover {
+    color: #13293D;
+}
+.navbar-brand {
+    height: 80px;
+}
+.navbar-brand:hover {
+    cursor: pointer;
+    color: #13293D;
+}
+.navbar-default .navbar-nav li a {
+    text-transform: uppercase;
+    color: #E8F1F2;
+    font-size: 13pt;
+    font-family: 'Quicksand', sans-serif !important;
+    text-shadow: none;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.navbar-default .navbar-nav li a:hover {
+    color: #318bc7;
+    cursor: pointer;
+}
+.navbar-toggle {
+    background-color: #E8F1F2;
+    margin-top: 20px;
+    border-radius: 0px;
+} .navbar-toggle>.icon-bar {
+    background-color: #13293D !important;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+#navbar.collapsing,
+#navbar.in {
+    width: 100%;
+    margin: 0;
+}
+#navbar.collapsing li,
+#navbar.in li {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+#navbar.collapsing li:hover,
+#navbar.in li:hover {
+    cursor: pointer;
+    background-color: #E8F1F2;
+}
+
+.centre {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#GameOnTheRocks {
+    font-family: 'Quicksand', sans-serif !important;
+    font-size: 14pt;
+    color: #E8F1F2;
+    /*background-color: #F26419;*/
+    background-color: #5bc0de;
+    height: 600px;
+    width: 100%;
+    padding-top: 200px;
+    text-align: center;
+}
+#GameOnTheRocks h1 {
+    font-size: 30pt;
+}
+#GameOnTheRocks .bannerLink {
+    font-size: 14pt;
+    color: #FFF;
+    background-color: transparent;
+    margin: 5px;
+    margin-top: 20px;
+    border: 2px solid #FFF;
+    border-radius: 0px;
+    text-shadow: none;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+#GameOnTheRocks .bannerLink:hover {
+    background-color: #FFF;
+    color: #318bc7;
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+#GameOnTheRocks .above {
+    position: relative;
+    z-index: 1;
+}
+
+#Services {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    color: #455a64;
+    height: 800px;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.service {
+    color: #455a64;
+    padding: 20px;
+}
+.service h1 {
+    font-family: "Raleway", sans-serif !important;
+    font-weight: bold;
+}
+.service p {
+    font-size: 13pt;
+}
+.service span {
+    color: #F26419;
+    font-size: 70pt;
+}
+
+/******************************************************************************|
+|*******************************  Game Class  *********************************|
+|******************************************************************************/
+
+.rtate::before {
+    color: #318bc7;
+    position: relative;
+    /*-webkit-animation: gameName 2s linear 0s 4;
+    -ms-animation: gameName 2s linear 0s 4;
+    -o-animation: gameName 2s linear 0s 4;
+    animation: gameName 2s linear 0s 4;*/
+}
+
+.Gaming {}
+.Gaming::before {
+    content: "Gaming; ";
+    color: #F26419;
+}
+
+.Minecraft {}
+.Minecraft::before {
+    content: "Minecraft";
+}
+
+.CounterStrike {}
+.CounterStrike::before {
+    content: "Counter-Strike";
+}
+
+.Ark {}
+.Ark::before {
+    content: "Ark";
+}
+
+/******************************************************************************|
+|*******************************  Animations  *********************************|
+|******************************************************************************/
+
+@-webkit-keyframes gameName {
+    0% { opacity: 0; left: 35px; width: 0px; }
+    40% { opacity: 1; left: 0px; width: auto; }
+    99% { opacity: 1; left: 0px; width: auto; }
+    100% { opacity: 0; left: 35px; width: 0px; width: 0px; }
+}
+@-moz-keyframes gameName {
+    0% { opacity: 0; left: 35px; width: 0px; }
+    40% { opacity: 1; left: 0px; width: auto; }
+    99% { opacity: 1; left: 0px; width: auto; }
+    100% { opacity: 0; left: 35px; width: 0px; width: 0px; }
+}
+@-o-keyframes gameName {
+    0% { opacity: 0; left: 35px; width: 0px; }
+    40% { opacity: 1; left: 0px; width: auto; }
+    99% { opacity: 1; left: 0px; width: auto; }
+    100% { opacity: 0; left: 35px; width: 0px; width: 0px; }
+}
+@keyframes gameName {
+    0% { opacity: 0; left: 35px; width: 0px; }
+    40% { opacity: 1; left: 0px; width: auto; }
+    99% { opacity: 1; left: 0px; width: auto; }
+    100% { opacity: 0; left: 35px; width: 0px; }a
+}
