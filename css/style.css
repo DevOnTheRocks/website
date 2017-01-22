@@ -9,7 +9,7 @@ html, body {
 body {
     font-family: 'Quicksand', sans-serif !important;
     color: inherit;
-    background-color: #f1f1f1;
+    background-color: #FFF;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -105,7 +105,7 @@ p, div {
     color: #E8F1F2;
     /*background-color: #F26419;*/
     background-color: #5bc0de;
-    height: 600px;
+    min-height: 650px;
     width: 100%;
     padding-top: 200px;
     text-align: center;
@@ -145,11 +145,16 @@ p, div {
     z-index: 1;
 }
 
+.particles-js-canvas-el {
+    position: absolute !important;
+    top: 0px;
+    left: 0px;
+}
+
 #Services {
     font-family: 'Quicksand', sans-serif;
     text-align: center;
     color: #455a64;
-    height: 800px;
     width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -172,6 +177,25 @@ p, div {
     font-size: 70pt;
 }
 
+#Servers {
+    font-family: "Quicksand", sans-serif;
+    background-color: #f1f1f1 !important;
+    min-height: 800px;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+#About {
+    font-family: "Quicksand", sans-serif;
+    min-height: 800px;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
 /******************************************************************************|
 |*******************************  Game Class  *********************************|
 |******************************************************************************/
@@ -179,15 +203,15 @@ p, div {
 .rtate::before {
     color: #318bc7;
     position: relative;
-    /*-webkit-animation: gameName 2s linear 0s 4;
-    -ms-animation: gameName 2s linear 0s 4;
-    -o-animation: gameName 2s linear 0s 4;
-    animation: gameName 2s linear 0s 4;*/
+    -webkit-animation: gameName 3s linear 0s 4;
+    -ms-animation: gameName 3s linear 0s 4;
+    -o-animation: gameName 3s linear 0s 4;
+    animation: gameName 3s linear 0s 4;
 }
 
 .Gaming {}
 .Gaming::before {
-    content: "Gaming; ";
+    content: "Gaming";
     color: #F26419;
 }
 
@@ -213,24 +237,20 @@ p, div {
 @-webkit-keyframes gameName {
     0% { opacity: 0; left: 35px; width: 0px; }
     40% { opacity: 1; left: 0px; width: auto; }
-    99% { opacity: 1; left: 0px; width: auto; }
-    100% { opacity: 0; left: 35px; width: 0px; width: 0px; }
+    100% { opacity: 1; left: 0px; width: auto; }
 }
 @-moz-keyframes gameName {
     0% { opacity: 0; left: 35px; width: 0px; }
     40% { opacity: 1; left: 0px; width: auto; }
-    99% { opacity: 1; left: 0px; width: auto; }
-    100% { opacity: 0; left: 35px; width: 0px; width: 0px; }
+    100% { opacity: 1; left: 0px; width: auto; }
 }
 @-o-keyframes gameName {
     0% { opacity: 0; left: 35px; width: 0px; }
     40% { opacity: 1; left: 0px; width: auto; }
-    99% { opacity: 1; left: 0px; width: auto; }
-    100% { opacity: 0; left: 35px; width: 0px; width: 0px; }
+    100% { opacity: 1; left: 0px; width: auto; }
 }
 @keyframes gameName {
     0% { opacity: 0; left: 35px; width: 0px; }
     40% { opacity: 1; left: 0px; width: auto; }
-    99% { opacity: 1; left: 0px; width: auto; }
-    100% { opacity: 0; left: 35px; width: 0px; }a
+    100% { opacity: 1; left: 0px; width: auto; }
 }

@@ -42,15 +42,15 @@
 
         <section id="GameOnTheRocks">
             <!-- <div class="overlay"></div> -->
-            <div class="container above">
+            <div class="container">
                 <div class="col-md-12">
-                    <img src="assets/images/logo.png" height="100" class="wow wobble" data-wow-delay="1.5s"></img>
-                    <h1 class="wow flipInX centre rtate" data-wow-delay="0.1s">
+                    <img src="assets/images/logo.png" height="100" class="wow wobble logo-hover above" data-wow-delay="1.5s"></img>
+                    <h1 class="wow flipInX centre rtate above" data-wow-delay="0.1s">
                         On The Rocks!
                     </h1>
-                    <p class="wow flipInY centre" data-wow-delay="0.5s">A refreshing experience for gamers</p>
-                    <a href="#" class="btn btn-default bannerLink wow bounceIn" data-wow-delay="1s">Game Servers</a>
-                    <a href="#" class="btn btn-default bannerLink wow bounceIn" data-wow-delay="1s">Github Projects</a>
+                    <p class="wow flipInY centre above" data-wow-delay="0.5s">A refreshing experience for gamers</p>
+                    <a href="servers.php" class="btn btn-default bannerLink wow bounceIn above" data-wow-delay="1s">Game Servers</a>
+                    <a href="https://github.com/DevOnTheRocks" class="btn btn-default bannerLink wow bounceIn above" data-wow-delay="1s">Github Projects</a>
                 </div>
             </div>
         </section>
@@ -109,10 +109,17 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section id="Servers">
+        </section>
+
+        <section id="About">
+        </section>
 
         <script src="js/jquery-1.12.3.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/particles.min.js" type="text/javascript"></script>
         <script src="js/main.js" type="text/javascript"></script>
     </body>
 </html>
