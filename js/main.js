@@ -2,6 +2,8 @@
     new WOW().init()
     animateBanner()
     animateHeader()
+    animateNavLinks()
+    animateServers()
 })()
 
 var supportedGameClasses = [
@@ -11,10 +13,28 @@ var supportedGameClasses = [
     "Gaming"
 ]
 
+function animateNavLinks() {
+    $('body').ready(function() {
+        $('.navbar-nav>li>a').each(function(index) {
+            if (this.href.indexOf('#') > 0) {
+                var sectionId = this.href.substring(this.href.indexOf('#')+1)
+
+                this.addEventListener('click', function(e) {
+                    e.preventDefault()
+
+                    $('html, body').animate({
+                        scrollTop: $('#'+sectionId).offset().top - 100
+                    }, 1000)
+                })
+            }
+        })
+    })
+}
+
 // replace the previous classname with the next one in the array
 function animateBanner() {
-    var currentGame = 0;
-    var previousGame = 0;
+    var currentGame = 0
+    var previousGame = 0
     var bannerAnimate = setInterval(function () {
         var element = document.getElementsByClassName('rtate')[0]
 
@@ -29,11 +49,24 @@ function animateBanner() {
 }
 
 function animateGlass() {
-    var glass = document.getElementsByClassName('logo-hover')[0];
+    var glass = document.getElementsByClassName('logo-hover')[0]
 }
 
 function animateHeader() {
-    particlesJS.load('GameOnTheRocks', 'js/particlesjs-config.json', function() {
-      console.log('particles.js loaded - callback');
-    });
+    particlesJS.load('GameOnTheRocks', 'js/particlesjs-config.json')
+}
+
+function animateServers() {
+    var servers = document.getElementsByClassName('game')
+
+    $('.game').click(function() {
+        $('.game').addClass('animated hinge');
+    })
+
+    for (var i = 0; i < servers.length; i++) {
+        servers[i].addEventListener('click', function(e) {
+            // this.parentNode.className = this.parentNode.className.replace('col-sm-4', 'col-sm-12')
+            // this.parentNode.className = this.parentNode.className.replace('col-md-offset-4', '')
+        })
+    }
 }

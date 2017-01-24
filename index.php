@@ -30,11 +30,11 @@
 
                 <div id="navbar" class="navbar-collapse collapse navbar-right">
                     <ol class="nav navbar-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Servers</a></li>
-                        <li><a href="#">Forums</a></li>
-                        <li><a href="#">Discord</a></li>
+                        <li><a href="#GameOnTheRocks">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Servers">Servers</a></li>
+                        <li><a href="http://forum.gameonthe.rocks/">Forums</a></li>
+                        <li><a href="#Discord">Discord</a></li>
                     </ol>
                 </div>
             </div>
@@ -43,21 +43,21 @@
         <section id="GameOnTheRocks">
             <!-- <div class="overlay"></div> -->
             <div class="container">
-                <div class="col-md-12">
+                <div class="col-sm-12">
                     <img src="assets/images/logo.png" height="100" class="wow wobble logo-hover above" data-wow-delay="1.5s"></img>
                     <h1 class="wow flipInX centre rtate above" data-wow-delay="0.1s">
                         On The Rocks!
                     </h1>
-                    <p class="wow flipInY centre above" data-wow-delay="0.5s">A refreshing experience for gamers</p>
-                    <a href="servers.php" class="btn btn-default bannerLink wow bounceIn above" data-wow-delay="1s">Game Servers</a>
-                    <a href="https://github.com/DevOnTheRocks" class="btn btn-default bannerLink wow bounceIn above" data-wow-delay="1s">Github Projects</a>
+                    <p class="wow flipInY centre above tagline" data-wow-delay="0.5s">A refreshing experience for gamers</p>
+                    <a href="#servers" class="btn btn-default bannerLink wow bounceIn above" data-wow-delay="1s">Game Servers</a>
+                    <a href="http://forum.gameonthe.rocks/" class="btn btn-default bannerLink wow bounceIn above" data-wow-delay="1s">Forums</a>
                 </div>
             </div>
         </section>
 
         <section id="Services">
             <div class="container">
-                <div class="col-md-12">
+                <div class="col-sm-12">
                     <div class="col-sm-12"><h1>What can we do for you?</h1></div>
                     <h4>OnTheRocks serves gaming chilled with our powerful and dedicated servers for your enjoyment.</h4>
                     <br/>
@@ -111,10 +111,84 @@
             </div>
         </section>
 
-        <section id="Servers">
+        <section id="About">
+            <div class="container">
+                <div class="col-sm-12">
+                    <h1>So who are we, anyway?</h1>
+                    <hr/>
+                    <div class="col-sm-12">
+                        <p>
+                            OnTheRocks are a team of server administrators and developers, experienced in handling servers.
+                            We come from a background of intense video gamers ourselves and we wanted to create an experience
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="portrait wow fadeInDown" data-wow-delay="0.2s">
+                                <div class="image"></div>
+                                <div class="name">
+                                    <h3>Mohron</h3>
+                                    <p>Devleoper</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="portrait wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="image"></div>
+                                <div class="name">
+                                    <h3>Cossacksman</h3>
+                                    <p>Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="portrait wow fadeInDown" data-wow-delay="0.2s">
+                                <div class="image"></div>
+                                <div class="name">
+                                    <h3>ProxyNeko</h3>
+                                    <p>Administrator</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="About">
+        <section id="Servers">
+            <div class="container">
+                <div class="col-sm-12">
+                    <h1>Our Game Servers</h1>
+                    <div class="row">
+                        <div class="col-sm-4 col-md-offset-4">
+                            <div class="game wow flipInY" data-wow-delay="0.2s">
+                                <div class="image"></div>
+                                <div class="name">
+                                    <h3>Minecraft</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Discord">
+            <div class="container">
+                <div class="col-sm-12">
+                    <img src="assets/images/Discord-Logo+Wordmark-White.png" class="wow slideInLeft img-responsive logo">
+                    <p>
+                        We use Discord as our dedicated VOIP platform. Discord gives us the flexibilty to manage a free,
+                        maintainable server with the ability to create custom utility bots to make your experience even
+                        easier. Discord is free to host, use and manage and we highly recommend it to any serious gamer.
+                    </p>
+                    <a href="http://forum.gameonthe.rocks/" class="btn btn-default bannerLink wow bounceIn above" data-wow-delay="1s">Join Discord</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="footer">
+
         </section>
 
         <script src="js/jquery-1.12.3.min.js" type="text/javascript"></script>

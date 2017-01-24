@@ -17,6 +17,14 @@ p, div {
     font-family: 'Quicksand', sans-serif !important;
 }
 
+p {
+    font-size: 13pt !important;
+}
+
+hr {
+    border-bottom: 1px solid #dadada !important;
+}
+
 #navbar {
     margin-top: 20px;
 }
@@ -105,7 +113,7 @@ p, div {
     color: #E8F1F2;
     /*background-color: #F26419;*/
     background-color: #5bc0de;
-    min-height: 650px;
+    /*min-height: 650px;*/
     width: 100%;
     padding-top: 200px;
     text-align: center;
@@ -113,12 +121,16 @@ p, div {
 #GameOnTheRocks h1 {
     font-size: 30pt;
 }
-#GameOnTheRocks .bannerLink {
+.tagline {
+    font-size: 13pt !important;
+}
+.bannerLink {
     font-size: 14pt;
     color: #FFF;
     background-color: transparent;
     margin: 5px;
     margin-top: 20px;
+    margin-bottom: 150px;
     border: 2px solid #FFF;
     border-radius: 0px;
     text-shadow: none;
@@ -127,9 +139,10 @@ p, div {
     -o-transition: all 0.2s;
     transition: all 0.2s;
 }
-#GameOnTheRocks .bannerLink:hover {
-    background-color: #FFF;
+.bannerLink:hover {
     color: #318bc7;
+    background-color: #FFF;
+    border-color: #FFF;
 }
 
 .overlay {
@@ -173,27 +186,110 @@ p, div {
     font-size: 13pt;
 }
 .service span {
-    color: #F26419;
+    color: #ff5e09;;
     font-size: 70pt;
 }
 
-#Servers {
+#About {
+    color: #455a64;
     font-family: "Quicksand", sans-serif;
     background-color: #f1f1f1 !important;
-    min-height: 800px;
+    /*min-height: 800px;*/
     width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
     box-sizing: border-box;
 }
+#About h1:first-child {
+    margin-top: 20px;
+}
+#About h1,
+#About h3 {
+    text-align: center;
+    margin: 0;
+}
+#About .portrait,
+#Servers .game {
+    background-color: #fff;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#About .portrait .image,
+#Servers .game .image
+ {
+    height: 350px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#About .portrait .name,
+#Servers .game .name {
+    color: #fff;
+    text-align: center;
+    background-color: #ff5e09;
+    padding: 15px;
+    box-sizing: border-box;
+}
+#About .portrait .name p {
+    margin: 0;
+    padding: 0;
+}
 
-#About {
+#Servers {
+    color: #455a64;
     font-family: "Quicksand", sans-serif;
-    min-height: 800px;
+    text-align: center;
     width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
     box-sizing: border-box;
+}
+#Servers .game {
+    margin-top: 50px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+#Servers .game .name {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+#Servers .game:hover {
+    cursor: pointer;
+}
+#Servers .game:hover .image {
+
+}
+#Servers .game:hover .name {
+    background-color: #5bc0de;
+}
+#Servers .game .image {
+    background-image: url('../assets/images/minecraft.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#Servers .game .name h3 {
+    margin: 0;
+    padding: 0;
+}
+
+#Discord {
+    color: #FFF;
+    text-align: center;
+    background-color: #7289DA;
+    padding: 40px;
+    box-sizing: border-box;
+}
+#Discord .logo {
+    max-height: 180px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Discord .bannerLink {
+    margin-bottom: 0px;
 }
 
 /******************************************************************************|
@@ -212,7 +308,7 @@ p, div {
 .Gaming {}
 .Gaming::before {
     content: "Gaming";
-    color: #F26419;
+    color: #ff5e09;
 }
 
 .Minecraft {}
